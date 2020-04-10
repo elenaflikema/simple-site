@@ -102,7 +102,7 @@
     width: 500px;
     max-width: 80%;
     border: 1px solid #938e9f;
-    z-index: 10;
+    z-index: 25;
 }
 
 .modal.active {
@@ -152,10 +152,22 @@
 #overlay.active {
     opacity: 1;
     pointer-events: all;
+    z-index: 20;
 }
 
 /*===========================*/
 
+.button-up {
+    display: none;
+}
+
+.visible-button-up {
+    position: fixed;
+    bottom: 1.0rem;
+    right: 1.0rem;
+}
+
+/*===========================*/
 @media screen and (max-width: 700px ) {
     .articles_list {
         grid-template-columns: repeat(1, 1fr);
