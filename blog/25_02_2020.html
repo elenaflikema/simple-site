@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>J.Flick</title>
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+		<script defer src="script.js"></script>
+		<script>
+			function showMenu() {
+				const element = document.getElementById("main-nav-menu");
+				element.classList.toggle("is-nav-open");
+			}
+		</script>
+	</head>
+	<body class="blog-container full-height-grow">
+	<div class="modal" id="modal">
+		<div class="modal-header">
+			<div class="modal-header-title">Translation</div>
+			<button data-close-button class="close-modal-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<p class="modal-body-word">smth</p>
+			<p class="modal-body-inner">smth</p>
+		</div>
+	</div>
+	<div id="overlay"> </div>
+	<header class="main-header-wrapper">
+		<div class="main-header">
+			<a href="/" class="brand-logo">
+				<div class="brand-logo-name">J O S H U A&nbsp;&nbsp;&nbsp;&nbsp;F L I C K E M A</div>
+			</a>
+			<div class="toggle_menu" onclick="showMenu()">
+				<span class="toggle_menu_bar"></span>
+				<span class="toggle_menu_bar"></span>
+				<span class="toggle_menu_bar"></span>
+			</div>
+			<div class="main-nav" >
+				<ul>
+					<li><a href="../blog.html">Blog</a></li>
+					<li><a href="../lessons.html">Video Lessons</a></li>
+					<li><a href="../reviews.html">Reviews</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="accent"><b>PROFESSIONAL&nbsp;ENGLISH&nbsp;TEACHER</b></div>
+		<div class="main-title">- Feb. 20, 2020 -</div>
+	</header>
+	<div class="main-nav-menu" id="main-nav-menu">
+		<ul>
+			<li onclick="showMenu()" class="close-button"><a> < </a></li>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../blog.html">Read my Blog</a></li>
+			<li><a href="../lessons.html">Video Lessons</a></li>
+			<li><a href="../lessons.html">Media</a></li>
+			<li><a href="../reviews.html">Feedback from my students</a></li>
+			<li><div class="lang"><b><a class="selected-lang">RU</a> | <a>EN</a></b></div></li>
+		</ul>
+	</div>
+			<div class="article">
+					<video width="600px" controls>
+					<source src="./video/blog_video_2.mp4"  type="video/mp4">
+					    Your browser does not support HTML5 video.
+					</video>
+			</div>
+		</div>
+	</body>
+</html>	

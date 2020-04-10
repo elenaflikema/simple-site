@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
     color: aliceblue;
     min-height: 100vh;
@@ -43,6 +43,10 @@ body {
     display: flex;
     align-items: flex-start;
     flex-grow: 1;
+}
+
+.subtitle-blog {
+    font-size: 1.2rem;
 }
 
 .container {
@@ -119,8 +123,9 @@ body {
 
 .accent {
     font-size: 1.1rem;
+    font-family: 'Raleway', sans-serif;
     padding-top: 0.7rem;
-    color: #f76a22;
+    color: salmon;
     animation: 0.4s ease-out 0s 1 slideInFromTop;
 }
 
@@ -143,7 +148,7 @@ body {
 }
 
 .selected-lang {
-    opacity: 0.4;
+    color: #938e9f;
 }
 
 .main-nav a:hover, .main-footer a:hover {
@@ -163,6 +168,7 @@ body {
     margin-bottom: 2rem;
     max-width: 100%;
     animation: 0.6s ease-out 0s 1 slideInFromLeft;
+    color: #938e9f;
 }
 
 .title {
@@ -176,7 +182,7 @@ body {
 
 .btn {
     color: white;
-    background-color: #f76a22;
+    background-color: salmon;
     padding: 0.75rem 1.5rem;
     border-radius: .5rem;
     text-decoration: none;
@@ -209,6 +215,23 @@ body {
     margin-right: 3.0rem;
 }
 
+.main-title-page {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 2.0rem;
+    padding: 1.0rem;
+    align-self: center;
+}
+
+.main-title {
+    font-family: 'Poiret One', cursive;
+    color: #938e9f;
+    font-size: 2.0rem;
+    padding: 1.0rem;
+    align-self: center;
+}
+
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
@@ -218,7 +241,7 @@ body {
     }
 }
 
-@keyframes slideInFromTop{
+@keyframes slideInFromTop {
     0% {
         transform: translateY(-100%);
     }
@@ -227,7 +250,15 @@ body {
     }
 }
 
-@media screen and (max-width: 800px ) {
+@keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 700px ) {
     .main-nav-menu {
         display: block;
         position: fixed;
