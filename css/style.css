@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: aliceblue;
+    min-height: 100vh;
+}
+
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-footer .container, .main-header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .call-to-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+}
+
+.blog-main-section {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.container {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-image: url("../images/avatar.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.blog-container {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.main-header, .main-footer {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+}
+
+.main-footer {
+    height: 70px;
+    font-weight: bold;
+}
+
+.brand-logo-name {
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+.social-link img {
+    width: 1em;
+    margin-right: .25em;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.35rem;
+    color: inherit;
+    text-decoration: none;
+    animation: 0.3s ease-out 0s 1 slideInFromTop;
+}
+
+.toggle_menu {
+    width: 30px;
+    height: 20px;
+    top: 0.35rem;
+    right: 0.35rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle_menu_bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+
+.accent {
+    font-size: 1.1rem;
+    padding-top: 0.7rem;
+    color: #f76a22;
+    animation: 0.4s ease-out 0s 1 slideInFromTop;
+}
+
+.main-nav ul, .main-footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a, .main-footer a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.lang {
+    font-family: 'Poiret One', cursive;
+    padding: 0;
+}
+
+.selected-lang {
+    opacity: 0.4;
+}
+
+.main-nav a:hover, .main-footer a:hover {
+    color: #adadad;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 2rem;
+    max-width: 70%;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+.subtitle_2 {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    animation: 0.6s ease-out 0s 1 slideInFromLeft;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2.4em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-family: 'Shadows Into Light', cursive;
+    animation: 0.7s ease-out 0s 1 slideInFromLeft;
+}
+
+.btn {
+    color: white;
+    background-color: #f76a22;
+    padding: 0.75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .95em;
+    animation: 0.8s ease-out 0s 1 slideInFromLeft;
+}
+
+.main-nav-menu {
+    display: none;
+}
+
+.main-nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-menu ul li{
+    padding: 20px 0;
+}
+
+.main-nav-menu a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0;
+}
+
+.close-button {
+    text-align: right;
+    margin-right: 3.0rem;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop{
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 800px ) {
+    .main-nav-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        transition: margin-left .3s;
+        margin-left: -100%;
+        background-color: black;
+        opacity: 0.9;
+        font-size: 1.7rem;
+        font-family: 'Poiret One', cursive;
+    }
+
+    .is-nav-open{
+        margin-left: 0;
+    }
+
+    .home-main-section {
+        justify-content: flex-end;
+    }
+
+    .home-main-section .call-to-actions {
+        align-self: flex-end;
+        padding-bottom: 1.5rem;
+    }
+
+    .container {
+        background-size: 100% auto;
+    }
+
+    .toggle_menu {
+        display: flex;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .navbar_links {
+        width: 100%;
+    }
+
+    .accent {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .brand-logo-name {
+        font-size: 1.0rem;
+    }
+    .main-nav-menu {
+        font-size: 1.1rem;
+    }
+}
+
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
